@@ -1,0 +1,61 @@
+<h1 class="my-3 text-primary"> Atualizar</h1>
+
+<div class="card shadow">
+    <form class="m-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="EcopontoNome">Nome do Ecoponto</label>
+                    <input type="text" class="form-control" placeholder="Digite o nome do Ecoponto" name="ecoponto.EcopontoNome"
+                       [(ngModel)]="ecoponto.EcopontoNome">
+                </div>
+            </div>
+        </div> <!-- fim da Row-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="HoraFuncIn">Hora Funcionamento Inicio:</label>
+                    <input type="number" class="form-control" placeholder=" 00:00" [(ngModel)]="ecoponto.HoraFuncIn" name="ecoponto.HoraFuncIn">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="HoraFuncFim">Hora Funcionamento Fim:</label>
+                    <input type="number" class="form-control" placeholder=" 00:00" [(ngModel)]="ecoponto.HoraFuncFim" name="ecoponto.HoraFuncFim">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="form-group">
+                    <label for="Endereco">Endereço do Ecoponto</label>
+                    <input type="text" class="form-control" placeholder="Av.Paulista" [(ngModel)]="ecoponto.Endereco" name="ecoponto.Endereco">
+
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="NumEndereco">Numero do endereço do Ecoponto</label>
+                    <input type="number" class="form-control" placeholder=" 1101" [(ngModel)]="ecoponto.NumEndereco" name="ecoponto.NumEndereco">
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-default" routerLink="/Ecopontos/Ecopontos">
+                    Volar
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-warning float-right" (click)="salvarEcopontos()">
+                    Salvar
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

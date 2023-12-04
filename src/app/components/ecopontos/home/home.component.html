@@ -1,0 +1,250 @@
+<style>
+  :host {
+    font-family: 'Segoe UI', Tahoma, Poppins, sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+  }
+
+  h1 {
+    font-size: 39px;
+  
+  }
+
+  h2 {
+    font-size: 33px;
+  
+  }
+
+  h3 {
+    font-size: 27px;
+  
+  }
+
+  h4 {
+    font-size: 23px;
+  
+  }
+
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  body {
+    margin-right: 200px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+  }
+
+  .spacer {
+    background-color: #007064;
+    flex: 0.95;
+  }
+
+  .spacer a {
+
+    Color: #003163;
+
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #008072;
+    color: white;
+    font-weight: 600;
+  }
+
+  footer {
+
+    background-color: #eae0e0;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+  }
+
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+
+  a,
+  a:visited,
+  a:hover {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+ 
+
+  .github-star-badge {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27, 31, 35, .2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+  }
+
+  .github-star-badge:hover {
+    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+    border-color: rgba(27, 31, 35, .35);
+    background-position: -.5em;
+  }
+
+  .github-star-badge .material-icons {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+    .card-container>*:not(.circle-link),
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  
+
+ 
+</style>
+
+
+
+<body>
+  
+<h1>Como Nós Atuamos</h1>
+<div class="row">
+  <div class="col-xl-6" role="main">
+    <img src="../../../../assets/img/Eco conscious-amico.svg" alt="Como Funciona" width="350" height=" " loading="lazy">
+
+  </div>
+  <div class="col-xl-6">
+    <p class="pad">
+      <br>
+      <br>
+      <br>
+      O usuário baixa o app e cria uma conta, Em seguida, ele pode usar o mapa do app para encontrar ecopontos
+      parceiros próximos, podendo filtrar por localização ou tipo de resíduo,
+      Também é possível ver informações sobre cada ecoponto parceiro, como endereço, horário de funcionamento e tipos
+      de resíduos aceitos, O usuário se desloca até um ecoponto parceiro para
+      descartar corretamente seus resíduos recicláveis e junta EcoPoints, que serão convertidos em vouchers.
+  </div>
+</div>
+
+
+
+<h1></h1>
+<h1></h1>
+
+<div class="row">
+  <h3 >Conheça os EcoPontos mais pertos da sua Casa</h3>
+</div>
+
+
+<br />
+<br />
+
+
+<!-- Resources -->
+
+<div class="row">
+  <div class="col-">
+    <div class="card" style="width: 18rem;">
+      <img src="../../../../assets/img/Ecoponto Tatuapé.png" class="card-img" alt="Ecoponto Tatuapé">
+      <div class="card-body">
+        <h5 class="card-title">{{EcopontoNome}}</h5>
+        <p class="card-text">{{Horafuncionamento}}</p>
+        <a routerLink="Ecopontos/Ecopontos" class="btn btn-primary">veja mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+
+
+<!-- Footer -->
+<footer>
+  Gostou do Projeto? veja mais no nosso GitHub &nbsp;
+  <a href="https://github.com/SustenTech?tab=repositories" target="_blank" rel="noopener">
+    <div class="github-star-badge">
+      <div class="card-container">
+        <img class="Containerzada" src="../../../../assets/img/25231.png" width="54" height="54"> &nbsp;
+        <br>
+
+      </div>
+
+    </div>
+  </a>
+  <a href="https://github.com/SustenTech" target="_blank" rel="noopener">
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </svg>
+  </a>
+</footer>

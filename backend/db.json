@@ -1,0 +1,28 @@
+{
+  "ecopontos": [
+    {
+      "id": 1001,
+      "EcopontoNome": "Ecoponto Tatuapé",
+      "HoraFuncIn": 8,
+      "HoraFuncFim": 18,
+      "Endereco": "Av.Salim Farah",
+      "NumEndereco": 179
+    },
+    {
+      "id": 1002,
+      "EcopontoNome": "Ecoponto Vila Guilherme",
+      "HoraFuncIn": 6,
+      "HoraFuncFim": 22,
+      "Endereco": "Rua José Bernado",
+      "NumEndereco": 1480
+    },
+    {
+      "id": 1003,
+      "EcopontoNome": "Ecoponto Pari",
+      "HoraFuncIn": 6,
+      "HoraFuncFim": 22,
+      "Endereco": "Av. Carlos de Campos",
+      "NumEndereco": 1031
+    }
+  ]
+}
